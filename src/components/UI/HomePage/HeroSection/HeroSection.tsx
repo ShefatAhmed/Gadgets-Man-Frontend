@@ -14,7 +14,7 @@ const HeroSection = () => {
   const Data = [
     {
       _id: 1,
-      title: "Air purifire",
+      title: "Car Washin Air purifire Gun",
       imglink:
         "https://i.postimg.cc/k5thsXBx/ca.jpg",
       price: 247,
@@ -28,7 +28,7 @@ const HeroSection = () => {
     },
     {
       _id: 3,
-      title: "Deerma Electric Kettle",
+      title: "Deerma Electric Kettle Heater",
       imglink:
         "https://i.postimg.cc/Z5QM6yKb/heat-ketle.jpg",
       price: 241,
@@ -42,14 +42,14 @@ const HeroSection = () => {
     },
     {
       _id: 5,
-      title: "Nest Hub Max",
+      title: "Google Nest Hub Max Tablet",
       imglink:
         "https://i.postimg.cc/T1Qk1K4X/nest.jpg",
       price: 299,
     },
     {
       _id: 6,
-      title: "Smart Air Purifier 4 Lite",
+      title: "Smart Water Air Purifier 4 Lite",
       imglink:
         "https://i.postimg.cc/CM4rm2L6/puri.jpg",
       price: 277,

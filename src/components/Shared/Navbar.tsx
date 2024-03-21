@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="lg:hidden absolute top-16 right-0 bg-white w-full p-4 z-10">
             {Links.map((link, index) => (
               <Link key={index} href={link.href}>
-                <span className="block text-gray-800 py-2">{link.label}</span>
+                <span className="block font-bold text-gray-800 py-2">{link.label}</span>
               </Link>
             ))}
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-4">
           {Links.map((link, index) => (
             <Link key={index} href={link.href}>
-              <span className="hover:underline">{link.label}</span>
+              <span className="hover:underline  font-bold">{link.label}</span>
             </Link>
           ))}
         </div>

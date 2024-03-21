@@ -1,7 +1,9 @@
+import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
+
 const HomePage = () => {
   return (
-    <div className="container">
-      <h1>Home Page</h1>
+    <div className="max-w-[1440px] mx-auto">
+      <HeroSection />
     </div>
   );
 };

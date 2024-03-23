@@ -21,7 +21,7 @@ const ProductDetailPage = async ({ params }: ProductId) => {
   );
   const product = await res.json();
   return (
-    <main className="max-w-4xl mx-auto py-8 px-4">
+    <div className="max-w-4xl mx-auto py-8 px-4">
       <div className="relative bg-white rounded-lg overflow-hidden shadow-md">
         <div className="relative">
           <Image
@@ -54,7 +54,7 @@ const ProductDetailPage = async ({ params }: ProductId) => {
           <p className="text-gray-700 my-4">{product.description}</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

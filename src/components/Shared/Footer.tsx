@@ -34,14 +34,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mr-4 mb-2 md:mb-0">
-                <Link href="/about">
+                <Link href="/about-us">
                   <span className="cursor-pointer hover:text-gray-200">
                     About Us
                   </span>
                 </Link>
               </li>
               <li className="mr-4 mb-2 md:mb-0">
-                <Link href="/contact">
+                <Link href="/contact-us">
                   <span className="cursor-pointer hover:text-gray-200">
                     Contact Us
                   </span>

@@ -25,7 +25,7 @@ const TrendingProduct = async () => {
             </p>
           </div>
           <Link
-            href="/products"
+            href="/gadgets"
             className="bg-black text-white rounded-full px-4 py-2 flex"
           >
             See All Products <ChevronRight />

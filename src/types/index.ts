@@ -14,3 +14,11 @@ export type TTrendingProduct = {
   offer: number;
   ratings: number;
 };
+export type TAllProduct = {
+  _id: string;
+  name: string;
+  image: string;
+  amount: number;
+  offer: number;
+  ratings: number;
+};

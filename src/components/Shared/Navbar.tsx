@@ -10,7 +10,7 @@ const Navbar = () => {
   const Links = [
     { href: "/", label: "Home" },
     { href: "/categories", label: "Categories" },
-    { href: "/products", label: "Products" },
+    { href: "/gadgets", label: "Products" },
     { href: "/flash-sale", label: "Flash Sale" },
     { href: "/about-us", label: "About Us" },
     { href: "/contact-us", label: "Contact Us" },
@@ -64,7 +64,9 @@ const Navbar = () => {
           <div className="lg:hidden absolute top-16 right-0 bg-white w-full p-4 z-10">
             {Links.map((link, index) => (
               <Link key={index} href={link.href}>
-                <span className="block font-bold text-gray-800 py-2">{link.label}</span>
+                <span className="block font-bold text-gray-800 py-2">
+                  {link.label}
+                </span>
               </Link>
             ))}
           </div>

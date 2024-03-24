@@ -27,7 +27,6 @@ const ALlProductPage = async (props: TProps) => {
           <FillterdProduct />
         </div>
         <div className="col-span-10 mx-4 md:mx-24 my-10">
-          <div></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {productsData.map((product: TAllProduct) => (
               <div

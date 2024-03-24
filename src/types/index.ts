@@ -21,4 +21,5 @@ export type TAllProduct = {
   amount: number;
   offer: number;
   ratings: number;
+  category: string;
 };

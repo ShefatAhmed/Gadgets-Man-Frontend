@@ -8,7 +8,7 @@ const DashboardSidebar = () => {
        Dashboard
       </Link>
       <nav className="flex flex-col gap-5 mt-8">
-        <Link href="/dashboard/all-products" className="bg-gray-100 rounded-lg p-2 hover:bg-gray-200 font-bold">All Product</Link>
+        <Link href="/dashboard/all-products" className="bg-gray-100 rounded-lg p-2 hover:bg-gray-200 font-bold">All Products</Link>
       </nav>
     </div>
   );

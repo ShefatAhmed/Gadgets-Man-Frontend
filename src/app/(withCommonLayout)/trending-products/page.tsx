@@ -3,11 +3,14 @@ import { CirclePlus } from "lucide-react";
 import Image from "next/image";
 
 const TrendingProductsPage = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/trending-products", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://gadgetsman.vercel.app/api/v1/trending-products",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const TrendingProducts = await res.json();
   return (
     <div>

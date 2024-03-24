@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FlashSale = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/flash-sale", {
+  const res = await fetch("https://gadgetsman.vercel.app/api/v1/flash-sale", {
     next: {
       revalidate: 30,
     },
@@ -14,7 +14,10 @@ const FlashSale = async () => {
     <div className="mx-4 md:mx-24 my-24">
       <div className="flex flex-row justify-between items-center mb-8">
         <h1 className="text-xl font-bold mb-4 md:mb-0">Flash Sale</h1>
-        <Link href="/flash-sale" className="bg-black text-white rounded-full px-4 py-2 flex">
+        <Link
+          href="/flash-sale"
+          className="bg-black text-white rounded-full px-4 py-2 flex"
+        >
           View All <ChevronRight />
         </Link>
       </div>

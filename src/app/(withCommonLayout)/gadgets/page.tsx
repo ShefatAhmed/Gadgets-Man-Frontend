@@ -7,7 +7,7 @@ import Link from "next/link";
 type TProps = { searchParams: { category: string } };
 
 const ALlProductPage = async (props: TProps) => {
-  let url = "http://localhost:5000/api/v1/products";
+  let url = "https://gadgetsman.vercel.app/api/v1/products";
   if (props.searchParams && props.searchParams.category) {
     url += `?category=${props.searchParams.category}`;
   }

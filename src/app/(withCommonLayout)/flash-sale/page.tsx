@@ -3,7 +3,7 @@ import Countdown from "@/utils/Countdown";
 import { CirclePlus } from "lucide-react";
 import Image from "next/image";
 const FlashSalePage = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/flash-sale", {
+  const res = await fetch("https://gadgetsman.vercel.app/api/v1/flash-sale", {
     cache: "no-store",
   });
   const data = await res.json();

@@ -6,7 +6,7 @@ interface ProductId {
   };
 }
 export const generateStaticParams = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch("https://gadgetsman.vercel.app/api/v1/products");
   const data = await res.json();
   return data.slice(0, 10).map((product: any) => ({
     productId: product._id,
@@ -14,7 +14,7 @@ export const generateStaticParams = async () => {
 };
 const ProductDetailPage = async ({ params }: ProductId) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/${params.productId}`,
+    `https://gadgetsman.vercel.app/api/v1/products/${params.productId}`,
     {
       cache: "no-store",
     }

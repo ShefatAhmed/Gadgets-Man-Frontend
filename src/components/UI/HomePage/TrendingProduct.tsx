@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const TrendingProduct = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/trending-products", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://gadgetsman.vercel.app/api/v1/trending-products",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const TrendingProducts = await res.json();
   return (
     <div>
@@ -20,8 +23,8 @@ const TrendingProduct = async () => {
             </h1>
             <p>
               You can see here our most popular products. <br /> If you want to
-              satisfyed please order <br /> and if you are not please see our all
-              products.
+              satisfyed please order <br /> and if you are not please see our
+              all products.
             </p>
           </div>
           <Link

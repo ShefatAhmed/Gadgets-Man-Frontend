@@ -1,7 +1,9 @@
 const ContactUsPage = () => {
   return (
-    <div>
-      <h1>Contact Us Page</h1>
+    <div className="h-screen flex justify-center items-center">
+      <h1 className="text-3xl font-extrabold">
+        Contact Us Page under construction
+      </h1>
     </div>
   );
 };

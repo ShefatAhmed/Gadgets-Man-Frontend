@@ -1,8 +1,16 @@
 "use client";
+import { signOut } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
+type UserProps = {
+  user?: {
+    name?: string | null | undefined;
+    email?: string | null | undefined;
+    image?: string | null | undefined;
+  };
+};
 
-const Navbar = () => {
+const Navbar = ({ session }: { session: UserProps | null }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -77,6 +85,15 @@ const Navbar = () => {
               <span className="hover:underline  font-bold">{link.label}</span>
             </Link>
           ))}
+        </div>
+        <div>
+          {session?.user ? (
+            <button onClick={() => signOut()} className="px-5 p-5 rounded-full bg-red-400">Logout</button>
+          ) : (
+            <Link href="/login" className="p-5 rounded-full bg-teal-400">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

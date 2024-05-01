@@ -1,4 +1,9 @@
-const DashboardNavbar = () => {
+import { authOptions } from "@/utils/authOptions";
+import { getServerSession } from "next-auth";
+
+const DashboardNavbar = async() => {
+  const session = await getServerSession(authOptions)
+  console.log(session);
   return (
     <div className="h-20 bg-gray-300 flex justify-end">
       <div className="flex items-center gap-5 mx-5">

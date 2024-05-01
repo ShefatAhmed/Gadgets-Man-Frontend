@@ -6,15 +6,15 @@ export const authOptions: NextAuthOptions = {
   providers: [
     GitHubProvider({
       clientId: process.env.GITHUB_ID as string,
-      clientSecret: process.env.GITHUB_SECRET as string,
+      clientS: process.env.GITHUB_S as string,
     }),
     GoogleProvider({
       clientId: process.env.Google_ID as string,
-      clientSecret: process.env.Google_SECRET as string,
+      clientS: process.env.Google_S as string,
     }),
   ],
   pages: {
     signIn: "/login",
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  S: process.env.NEXTAUTH_S,
 };
